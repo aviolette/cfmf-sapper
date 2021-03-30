@@ -1,0 +1,29 @@
+{
+  "date": "20210321",
+  "data": [
+    {
+      "name": "Schaumburg Farmers' Market",
+      "url": "https://foobar.com",
+      "location": {
+        "name": "Schaumburg Farmers' Market",
+        "coords": {
+          "latitude": "123",
+          "longitude": "456"
+        },
+        "startTime": "0700",
+        "endTime": "1330"
+      }
+    },
+    {
+      "name": "Daley Farmers' Market",
+      "url": "https://bazbar.com",
+      "location": {
+        "name": "Daley Plaza",
+        "latitude": "444",
+        "longitude": "456"
+      },
+      "startTime": "0800",
+      "endTime": "1400"
+    }
+  ]
+}
