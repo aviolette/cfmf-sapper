@@ -25,8 +25,7 @@
 		<Box>
 			{market["name"]}<br/>
 			7am-1:30pm<br/>
-			1234 N. Baz Bar Lane,<br/>
-			Schaumburg, IL<br/>
+			{market["location"]["name"]}<br/>
 
 		</Box>
 	{/each}
