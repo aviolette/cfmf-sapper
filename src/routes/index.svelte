@@ -51,6 +51,6 @@
 <Map lat={41.8336479} lon={-87.8720449} zoom={8}>
 
 	{#each markets["data"] as market}
-		<MapMarker lat="{market['location']['latitude']}" lon="{market['location']['longitude']}" label="{market['name']}<br/>{market['location']['address']}<br/>Hours:<br/>{market['startTimeReadable']} - {market['endTimeReadable']}"/>
+		<MapMarker lat="{market['location']['latitude']}" lon="{market['location']['longitude']}" label="<a target='_blank' href='{market['url']}'>{market['name']}</a><br/>{market['location']['address']}<br/>Hours:<br/>{market['startTimeReadable']} - {market['endTimeReadable']}"/>
 	{/each}
 </Map>
