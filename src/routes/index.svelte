@@ -12,8 +12,8 @@
 	export async function preload(page, session) {
 		let fileName = ''
 		if (page.path === '/') {
-//			const now = new Date(2021,5,4)
-			const now = new Date()
+			const now = new Date(2021,5,4)
+//			const now = new Date()
 			fileName = now.getFullYear() + "-" + zeroFilled(now.getMonth()+1) + "-" + zeroFilled(now.getDate()) + ".json"
 		}
 		const response = await this.fetch("/dates/" + fileName).then(response => {
@@ -51,6 +51,6 @@
 <Map lat={41.8336479} lon={-87.8720449} zoom={8}>
 
 	{#each markets["data"] as market}
-		<MapMarker lat="{market['location']['latitude']}" lon="{market['location']['longitude']}" label="{market['name']}<br/>{market['location']['address']}"/>
+		<MapMarker lat="{market['location']['latitude']}" lon="{market['location']['longitude']}" label="{market['name']}<br/>{market['location']['address']}<br/>Hours:<br/>{market['startTimeReadable']} - {market['endTimeReadable']}"/>
 	{/each}
 </Map>
