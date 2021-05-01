@@ -9,7 +9,6 @@ WORKDIR /usr/src/app
 
 COPY / ./
 
-
 # Install production dependencies.
 RUN npm install
 
