@@ -39,7 +39,6 @@ jobs:
       # Deploy image to Cloud Run
       - name: Deploy
         run: |
-#          gcloud run services add-iam-policy-binding  $SERVICE_NAME --member="allUsers" --role="roles/run.invoker" --platform=managed --region="$RUN_REGION"
           gcloud run deploy $SERVICE_NAME \
             --region $RUN_REGION \
             --image gcr.io/$GCLOUD_PROJECT_ID/$SERVICE_NAME:$GITHUB_SHA \
