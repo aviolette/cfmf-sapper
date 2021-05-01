@@ -22,7 +22,7 @@ jobs:
           node-version: '10.x'
 
       # Setup gcloud CLI
-      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      - uses: google-github-actions/setup-gcloud@master
         with:
           version: '275.0.0'
           service_account_email: "testgithubaction@pvstaging.iam.gserviceaccount.com"
