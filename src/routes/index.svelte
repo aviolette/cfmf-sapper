@@ -12,8 +12,7 @@
 	export async function preload(page, session) {
 		let fileName = ''
 		if (page.path === '/') {
-			const now = new Date(2021,5,4)
-//			const now = new Date()
+			const now = new Date()
 			fileName = now.getFullYear() + "-" + zeroFilled(now.getMonth()+1) + "-" + zeroFilled(now.getDate()) + ".json"
 		}
 		const response = await this.fetch("/dates/" + fileName).then(response => {
@@ -46,7 +45,6 @@
 
 </script>
 <h2>Markets Open Today - {today}</h2>
-
 
 <Map lat={41.8336479} lon={-87.8720449} zoom={8}>
 
