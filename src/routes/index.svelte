@@ -4,8 +4,6 @@
 	<title>Chicago Farmers Market Finder</title>
 </svelte:head>
 
-<h1>Chicago Farmers' Market Finder</h1>
-
 <script context="module">
 	function zeroFilled(n) { return ('00'+n).slice(-2); }
 
@@ -44,7 +42,7 @@
 
 
 </script>
-<h2>Markets Open Today - {today}</h2>
+<h2>Farmers' Markets Open Today - {today}</h2>
 
 <Map lat={41.8336479} lon={-87.8720449} zoom={8}>
 
