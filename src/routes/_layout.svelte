@@ -6,12 +6,13 @@
 
 <style>
 	main {
-		position: relative;
+		position: absolute;
 		background-color: white;
 		padding: 2em;
 		margin: 0 auto;
 		box-sizing: border-box;
-		min-height: 500px;
+		height: 100%;
+		width: 100%;
 	}
 </style>
 
