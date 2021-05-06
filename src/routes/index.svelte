@@ -44,7 +44,7 @@
 </script>
 <h2>Farmers' Markets Open Today - {today}</h2>
 
-<Map lat={41.8336479} lon={-87.8720449} zoom={9}>
+<Map lat={41.8336479} lon={-87.8720449} zoom={10}>
 
 	{#each markets["data"] as market}
 		<MapMarker lat="{market['location']['latitude']}" lon="{market['location']['longitude']}" label="<h2><a target='_blank' href='{market['url']}'>{market['name']}</a></h2>{market['location']['address']}<br/>Hours:<br/>{market['startTimeReadable']} - {market['endTimeReadable']}"/>
