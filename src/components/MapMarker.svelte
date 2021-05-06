@@ -10,6 +10,7 @@
     export let label;
 
     const popup = new mapbox.Popup({ offset: 25 })
+        .setMaxWidth(600)
         .setHTML(label);
 
     const marker = new mapbox.Marker()
